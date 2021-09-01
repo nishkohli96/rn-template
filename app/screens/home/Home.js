@@ -1,13 +1,14 @@
 import React from 'react';
-import { SafeAreaView, Text, Button } from 'react-native';
-import { ThemedView, ThemedText } from '_Shared/StyledComps';
+import { Text, Button } from 'react-native';
+import { ThemedContainer, ThemedView, ThemedText } from '_Shared/StyledComps';
 import rootStore from '_Store';
 
 const App = () => {
     return (
-        <SafeAreaView>
+        <ThemedContainer>
             <ThemedView>
                 <Text>hi from homescreen</Text>
+                <ThemedText>hdeiwfwe</ThemedText>
             </ThemedView>
             <Text>fuck</Text>
             <Button
@@ -15,7 +16,8 @@ const App = () => {
                 color="#006699"
                 onPress={() => rootStore.theme.setThemeAction('dark')}
             />
-        </SafeAreaView>
+            <ThemedText>hdeiwfwe</ThemedText>
+        </ThemedContainer>
     );
 };
 

@@ -12,7 +12,6 @@ class ThemeStore {
     async getThemeAction() {
         try {
             const themeVar = await AsyncStorage.getItem('theme');
-            console.log('themeVar: ', themeVar);
             themeVar
                 ? this.setThemeAction(themeVar)
                 : this.setThemeAction('light');
@@ -22,7 +21,6 @@ class ThemeStore {
     }
 
     async setThemeAction(themeName = 'light') {
-        console.log('in here ', themeName)
         try {
             await AsyncStorage.setItem('theme', themeName);
             this.themeObj = themeName === 'light' ? Light : Dark;
