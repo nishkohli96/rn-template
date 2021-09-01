@@ -1,36 +1,20 @@
 import React from 'react';
-import { SafeAreaView, Text } from 'react-native';
-import AsyncStorage from '@react-native-async-storage/async-storage';
-import { ThemedView } from '_Shared/StyledComps';
-
-const storeData = async value => {
-    try {
-        await AsyncStorage.setItem('@storage_Key', value);
-    } catch (e) {
-      return;
-    }
-};
-
-const getData = async () => {
-    try {
-        const value = await AsyncStorage.getItem('@storage_Key');
-        if (value !== null) {
-            console.log(value);
-            return value;
-        }
-    } catch (e) {
-        return 'error';
-    }
-};
+import { SafeAreaView, Text, Button } from 'react-native';
+import { ThemedView, ThemedText } from '_Shared/StyledComps';
+import rootStore from '_Store';
 
 const App = () => {
-    storeData('nish');
-    getData();
     return (
         <SafeAreaView>
             <ThemedView>
                 <Text>hi from homescreen</Text>
             </ThemedView>
+            <Text>fuck</Text>
+            <Button
+                title="Change Theme"
+                color="#006699"
+                onPress={() => rootStore.theme.setThemeAction('dark')}
+            />
         </SafeAreaView>
     );
 };

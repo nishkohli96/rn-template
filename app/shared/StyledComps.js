@@ -6,3 +6,8 @@ export const ThemedView = styled.View`
     display: flex;
     flex: 1;
 `;
+
+export const ThemedText = styled.Text`
+    color: ${(props) => props.theme.colors.text};
+    fontSize: 16px;
+`;

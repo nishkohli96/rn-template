@@ -1,10 +1,10 @@
-export const Light = {
+export default Light = {
     dark: false,
     colors: {
       primary: 'rgb(255, 45, 85)',
-      background: 'blue',
+      background: 'pink',
       card: 'rgb(255, 255, 255)',
-      text: 'pink',
+      text: 'red',
       border: 'rgb(199, 199, 204)',
       notification: 'rgb(255, 69, 58)',
     },
