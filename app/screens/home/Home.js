@@ -1,6 +1,7 @@
 import React from 'react';
-import { SafeAreaView, Text, View } from 'react-native';
+import { SafeAreaView, Text } from 'react-native';
 import AsyncStorage from '@react-native-async-storage/async-storage';
+import { ThemedView } from '_Shared/StyledComps';
 
 const storeData = async value => {
     try {
@@ -27,9 +28,9 @@ const App = () => {
     getData();
     return (
         <SafeAreaView>
-            <View>
+            <ThemedView>
                 <Text>hi from homescreen</Text>
-            </View>
+            </ThemedView>
         </SafeAreaView>
     );
 };

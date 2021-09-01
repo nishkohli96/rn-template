@@ -1,8 +1,10 @@
 import React from 'react';
 import { NavigationContainer } from '@react-navigation/native';
 import { createStackNavigator } from '@react-navigation/stack';
+import { ThemeProvider } from 'styled-components/native';
 
 import Home from '_Screens/home/Home';
+import { Dark } from '_Themes/Dark';
 
 const Stack = createStackNavigator();
 
@@ -29,13 +31,15 @@ const App = () => {
     // }
     return (
         <NavigationContainer>
-            <Stack.Navigator initialRouteName={Home}>
-                <Stack.Screen
-                    name="Home"
-                    component={Home}
-                    // screenOptions={{ headerShown: false }}
-                />
-            </Stack.Navigator>
+            <ThemeProvider theme={Dark}>
+                <Stack.Navigator initialRouteName={Home}>
+                    <Stack.Screen
+                        name="Home"
+                        component={Home}
+                        // options={{ headerShown: false }}
+                    />
+                </Stack.Navigator>
+            </ThemeProvider>
         </NavigationContainer>
     );
 };

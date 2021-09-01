@@ -10,12 +10,9 @@
                     "_App":"./app",
                     "_Fonts": "./app/assets/fonts",
                     "_Images": "./app/assets/images",
-                    "_Themes": "./app/assets/themes",
-                    "_Components": "./app/components",
-                    "_StyledComps": "./app/components/styled-components",
-                    "_Context": "./app/context",
-                    "_I18Next": "./app/i18n",
                     "_Screens": "./app/screens",
+                    "_Shared": "./app/shared",
+                    "_Themes": "./app/assets/themes",
                     "_Utils": "./app/utils"
                 }
             }
