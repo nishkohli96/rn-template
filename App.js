@@ -5,25 +5,24 @@ import { createStackNavigator } from '@react-navigation/stack';
 import { ThemeProvider } from 'styled-components/native';
 import { observer } from 'mobx-react';
 import Home from '_Screens/home/Home';
-import Dark from '_Store';
+import { useThemeStore } from '_Store/theme.store';
 
 const Stack = createStackNavigator();
 
 const App = () => {
+    const { themeObj, getThemeAction } = useThemeStore();
+    console.log('themeObj: ', themeObj);
+
     React.useEffect(() => {
-        rootStore.theme.getThemeAction();
+        getThemeAction();
     }, []);
 
     return (
         <SafeAreaProvider>
             <NavigationContainer>
-                <ThemeProvider theme={rootStore.theme.themeObj}>
+                <ThemeProvider theme={themeObj}>
                     <Stack.Navigator initialRouteName={Home}>
-                        <Stack.Screen
-                            name="Home"
-                            component={Home}
-                            options={{ headerShown: false }}
-                        />
+                        <Stack.Screen name="Home" component={Home} />
                     </Stack.Navigator>
                 </ThemeProvider>
             </NavigationContainer>

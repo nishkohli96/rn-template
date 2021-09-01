@@ -5,9 +5,11 @@ import Light from '_Themes/Light';
 import Dark from '_Themes/Dark';
 
 export class ThemeStore {
+
+    themeObj = Light;
+
     constructor() {
         makeAutoObservable(this);
-        this.themeObj = Light;
     }
 
     async getThemeAction() {
@@ -33,5 +35,6 @@ export class ThemeStore {
     }
 }
 
-export const ThemeStoreContext = createContext(counterStore);
+const themeStore = new ThemeStore()
+export const ThemeStoreContext = createContext(themeStore);
 export const useThemeStore = () => useContext(ThemeStoreContext)

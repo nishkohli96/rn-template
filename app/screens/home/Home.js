@@ -1,13 +1,15 @@
 import React from 'react';
-import { Text, Button, Switch } from 'react-native';
+import { Text, Switch } from 'react-native';
 import { ThemedContainer, ThemedView, ThemedText } from '_Shared/StyledComps';
-import rootStore from '_Store';
+import { useThemeStore } from '_Store/theme.store';
 
 const App = () => {
     const [isEnabled, setIsEnabled] = React.useState(false);
+    const { setThemeAction } = useThemeStore();
+
     const toggleSwitch = () => {
         setIsEnabled(previousState => !previousState);
-        rootStore.theme.setThemeAction(!isEnabled ? 'dark' : 'light');
+        setThemeAction(!isEnabled ? 'dark' : 'light');
     };
 
     return (
@@ -17,11 +19,6 @@ const App = () => {
                 <ThemedText>hdeiwfwe</ThemedText>
             </ThemedView>
             <Text>fuck</Text>
-            <Button
-                title="Change Theme"
-                color="#006699"
-                onPress={() => rootStore.theme.setThemeAction('dark')}
-            />
             <ThemedText>hdeiwfwe</ThemedText>
             <Switch
                 trackColor={{ false: '#767577', true: '#81b0ff' }}
