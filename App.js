@@ -1,36 +1,42 @@
 import React from 'react';
-import { SafeAreaView, Text, View } from 'react-native';
-import AsyncStorage from '@react-native-async-storage/async-storage';
+import { NavigationContainer } from '@react-navigation/native';
+import { createStackNavigator } from '@react-navigation/stack';
 
-const storeData = async value => {
-    try {
-        await AsyncStorage.setItem('@storage_Key', value);
-    } catch (e) {
-      return;
-    }
-};
+import Home from '_Screens/home/Home';
 
-const getData = async () => {
-    try {
-        const value = await AsyncStorage.getItem('@storage_Key');
-        if (value !== null) {
-            console.log(value);
-            return value;
-        }
-    } catch (e) {
-        return 'error';
-    }
-};
+const Stack = createStackNavigator();
 
 const App = () => {
-    storeData('nish');
-    getData();
+    // const [firstScreen, setFirstScreen] = React.useState();
+
+    // AsyncStorage.getItem('firstTime').then((item) => {
+    //     console.log('itm ', item);
+    //     if (!item) {
+    //         console.log('in this loop');
+    //         setFirstScreen('IntroScreen');
+    //     } else {
+    //         setFirstScreen('NavDrawer');
+    //     }
+    // });
+
+    // if (!firstScreen) {
+    //     /* Feel free to design a splash Screen for this part */
+    //     return (
+    //         <View>
+    //             <Text>App loading</Text>
+    //         </View>
+    //     );
+    // }
     return (
-        <SafeAreaView>
-            <View>
-                <Text>hi</Text>
-            </View>
-        </SafeAreaView>
+        <NavigationContainer>
+            <Stack.Navigator initialRouteName={Home}>
+                <Stack.Screen
+                    name="Home"
+                    component={Home}
+                    // screenOptions={{ headerShown: false }}
+                />
+            </Stack.Navigator>
+        </NavigationContainer>
     );
 };
 
