@@ -1,9 +1,10 @@
+import { createContext, useContext } from 'react';
 import { makeAutoObservable } from 'mobx';
 import AsyncStorage from '@react-native-async-storage/async-storage';
 import Light from '_Themes/Light';
 import Dark from '_Themes/Dark';
 
-class ThemeStore {
+export class ThemeStore {
     constructor() {
         makeAutoObservable(this);
         this.themeObj = Light;
@@ -12,6 +13,7 @@ class ThemeStore {
     async getThemeAction() {
         try {
             const themeVar = await AsyncStorage.getItem('theme');
+            console.log('get themeVar: ', themeVar);
             themeVar
                 ? this.setThemeAction(themeVar)
                 : this.setThemeAction('light');
@@ -21,6 +23,7 @@ class ThemeStore {
     }
 
     async setThemeAction(themeName = 'light') {
+        console.log('themeName: ', themeName);
         try {
             await AsyncStorage.setItem('theme', themeName);
             this.themeObj = themeName === 'light' ? Light : Dark;
@@ -30,4 +33,5 @@ class ThemeStore {
     }
 }
 
-export default ThemeStore;
+export const ThemeStoreContext = createContext(counterStore);
+export const useThemeStore = () => useContext(ThemeStoreContext)

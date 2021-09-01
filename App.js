@@ -5,7 +5,7 @@ import { createStackNavigator } from '@react-navigation/stack';
 import { ThemeProvider } from 'styled-components/native';
 import { observer } from 'mobx-react';
 import Home from '_Screens/home/Home';
-import rootStore from '_Store';
+import Dark from '_Store';
 
 const Stack = createStackNavigator();
 

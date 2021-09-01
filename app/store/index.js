@@ -1,4 +1,4 @@
-import ThemeStore from './theme.store';
+import { ThemeStore } from './theme.store';
 import { configure } from 'mobx';
 
 /* Import all stores here */
@@ -8,6 +8,7 @@ class RootStore {
             Check README on how to enable Hermes */
         configure({
             useProxies: 'always', //"never"
+            isolateGlobalState: true,
         });
 
         this.theme = new ThemeStore(this);
