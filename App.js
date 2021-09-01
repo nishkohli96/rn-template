@@ -11,7 +11,6 @@ const Stack = createStackNavigator();
 
 const App = () => {
     const { themeObj, getThemeAction } = useThemeStore();
-    console.log('themeObj: ', themeObj);
 
     React.useEffect(() => {
         getThemeAction();
@@ -19,13 +18,17 @@ const App = () => {
 
     return (
         <SafeAreaProvider>
-            <NavigationContainer>
-                <ThemeProvider theme={themeObj}>
+            <ThemeProvider theme={themeObj}>
+                <NavigationContainer>
                     <Stack.Navigator initialRouteName={Home}>
-                        <Stack.Screen name="Home" component={Home} />
+                        <Stack.Screen
+                            name="Home"
+                            component={Home}
+                            options={{ headerShown: false }}
+                        />
                     </Stack.Navigator>
-                </ThemeProvider>
-            </NavigationContainer>
+                </NavigationContainer>
+            </ThemeProvider>
         </SafeAreaProvider>
     );
 };
