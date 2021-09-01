@@ -12,6 +12,7 @@
                     "_Images": "./app/assets/images",
                     "_Screens": "./app/screens",
                     "_Shared": "./app/shared",
+                    "_Store": "./app/store",
                     "_Themes": "./app/assets/themes",
                     "_Utils": "./app/utils"
                 }
