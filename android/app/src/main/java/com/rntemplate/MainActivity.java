@@ -1,4 +1,4 @@
-package com.rntemplate;
+package com.nish.rntemplate;
 
 import com.facebook.react.ReactActivity;
 
