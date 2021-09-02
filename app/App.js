@@ -1,20 +1,16 @@
 import React from 'react';
-import i18next from 'i18next';
-import { SafeAreaProvider } from 'react-native-safe-area-context';
-import { NavigationContainer } from '@react-navigation/native';
-import { createStackNavigator } from '@react-navigation/stack';
-import { ThemeProvider } from 'styled-components/native';
 import { observer } from 'mobx-react';
+import i18next from 'i18next';
 import { I18nextProvider } from 'react-i18next';
-import Home from '_Screens/home/Home';
+import { SafeAreaProvider } from 'react-native-safe-area-context';
+import { ThemeProvider } from 'styled-components/native';
 
+import StackNav from '_Navigation/StackNav';
 import { useThemeStore } from '_Store/theme.store';
 import { useLangStore } from '_Store/lang.store';
 import common_en from '_I18N/en/common.json';
 import common_fr from '_I18N/fr/common.json';
 import common_hi from '_I18N/hi/common.json';
-
-const Stack = createStackNavigator();
 
 const App = () => {
     const { themeObj, getThemeAction } = useThemeStore();
@@ -45,15 +41,7 @@ const App = () => {
         <SafeAreaProvider>
             <I18nextProvider i18n={i18next}>
                 <ThemeProvider theme={themeObj}>
-                    <NavigationContainer>
-                        <Stack.Navigator initialRouteName={Home}>
-                            <Stack.Screen
-                                name="Home"
-                                component={Home}
-                                options={{ headerShown: false }}
-                            />
-                        </Stack.Navigator>
-                    </NavigationContainer>
+                    <StackNav />
                 </ThemeProvider>
             </I18nextProvider>
         </SafeAreaProvider>

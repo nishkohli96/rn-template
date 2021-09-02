@@ -11,6 +11,7 @@
                     "_Fonts": "./app/assets/fonts",
                     "_Images": "./app/assets/images",
                     "_I18N": "./app/assets/i18n",
+                    "_Navigation": "./app/navigation",
                     "_Screens": "./app/screens",
                     "_Shared": "./app/shared",
                     "_Store": "./app/store",
