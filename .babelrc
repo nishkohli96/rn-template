@@ -10,6 +10,7 @@
                     "_App": "./app",
                     "_Fonts": "./app/assets/fonts",
                     "_Images": "./app/assets/images",
+                    "_I18N": "./app/assets/i18n",
                     "_Screens": "./app/screens",
                     "_Shared": "./app/shared",
                     "_Store": "./app/store",
