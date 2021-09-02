@@ -5,12 +5,11 @@ import Light from '_Themes/Light';
 import Dark from '_Themes/Dark';
 
 export class ThemeStore {
-
     themeObj = Light;
 
     constructor() {
         configure({
-            enforceActions: "never", /* disable strict-mode warning */
+            enforceActions: 'never' /* disable strict-mode warning */,
         });
         makeObservable(this, {
             themeObj: observable,
@@ -48,6 +47,6 @@ export class ThemeStore {
     }
 }
 
-const themeStore = new ThemeStore()
+const themeStore = new ThemeStore();
 export const ThemeStoreContext = createContext(themeStore);
-export const useThemeStore = () => useContext(ThemeStoreContext)
+export const useThemeStore = () => useContext(ThemeStoreContext);
