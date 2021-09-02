@@ -1,7 +1,7 @@
 import React from 'react';
 import { Text, Switch } from 'react-native';
 import { useTranslation } from 'react-i18next';
-import { ThemedContainer, ThemedView, ThemedText } from '_Shared/StyledComps';
+import { ThemedContainer, ThemedView, ThemedText } from '_Shared/Comps.themed';
 import { useThemeStore } from '_Store/theme.store';
 
 const App = () => {
