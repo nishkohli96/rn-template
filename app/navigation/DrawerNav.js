@@ -18,7 +18,7 @@ const NavDrawer = () => {
         <Drawer.Navigator
             initialRouteName="Home"
             overlayColor="transparent"
-            // drawerContent={() => <DrawerLayout />}
+            drawerContent={() => <DrawerLayout />}
         >
             <Drawer.Screen name="Home" component={Home} />
             <Drawer.Screen name="IntroScreen1" component={IntroScreen1} />

@@ -1,3 +1,5 @@
+import CommonStyles from './CommonStyles';
+
 export default Dark = {
     dark: true,
     colors: {
@@ -5,7 +7,9 @@ export default Dark = {
         background: '#25293e',
         card: 'rgb(255, 75, 255)',
         text: '#f7f6f3',
-        border: 'rgb(199, 199, 204)',
+        border: 'silver',
         notification: 'rgb(255, 69, 58)',
+        heading: 'yellow',
     },
+    ...CommonStyles,
 };

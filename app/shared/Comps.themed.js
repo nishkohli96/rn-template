@@ -17,3 +17,9 @@ export const ThemedText = styled.Text`
     color: ${props => props.theme.colors.text};
     fontSize: 16px;
 `;
+
+export const ThemedHeading = styled.Text`
+    color: ${props => props.theme.colors.heading};
+    fontSize: 22px;
+    fontWeight: 600
+`;
