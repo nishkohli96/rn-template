@@ -2,6 +2,8 @@
 
 ## Developer Guide
 
+- Create react-native-app with custom package name.
+```react-native init MyApp --package=com.organizationname.app```
 - Enable Hermes [link](https://reactnative.dev/docs/hermes) 
 - To make sure that the content doesn't overlap, especially in iPhones, use `SafeAreaProvider`. Import this stmt at the top of your app code.
 
