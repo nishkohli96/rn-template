@@ -13,14 +13,16 @@ Refer https://reactnavigation.org/docs/drawer-navigator#checking-if-the-drawer-i
 const Drawer = createDrawerNavigator();
 
 const NavDrawer = () => {
-
     return (
         <Drawer.Navigator
             initialRouteName="Home"
             overlayColor="transparent"
-            drawerContent={() => <DrawerLayout />}
-        >
-            <Drawer.Screen name="Home" component={Home} />
+            drawerContent={() => <DrawerLayout />}>
+            <Drawer.Screen
+                name="Home"
+                component={Home}
+                // options={{ headerShown: false }}
+            />
             <Drawer.Screen name="IntroScreen1" component={IntroScreen1} />
             <Drawer.Screen name="IntroScreen2" component={IntroScreen2} />
             <Drawer.Screen name="IntroScreen3" component={IntroScreen3} />
