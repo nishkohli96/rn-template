@@ -1,5 +1,6 @@
 import 'react-native-gesture-handler';
 import React from 'react';
+import { StatusBar } from 'react-native';
 import { observer } from 'mobx-react';
 import i18next from 'i18next';
 import { I18nextProvider } from 'react-i18next';
@@ -47,6 +48,14 @@ const App = () => {
         <SafeAreaProvider>
             <I18nextProvider i18n={i18next}>
                 <ThemeProvider theme={themeObj}>
+                    <StatusBar
+                        animated={true}
+                        backgroundColor={themeObj.colors.background}
+                        barStyle={
+                            themeObj.dark ? 'light-content' : 'dark-content'
+                        }
+                        networkActivityIndicatorVisible={true} // for iOS
+                    />
                     <StackNav />
                 </ThemeProvider>
             </I18nextProvider>

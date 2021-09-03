@@ -24,7 +24,7 @@ const NavDrawer = () => {
             <Drawer.Screen
                 name="Home"
                 component={Home}
-                // options={{ headerShown: false }}
+                options={{ headerShown: false }}
             />
             <Drawer.Screen name="IntroScreen1" component={IntroScreen1} />
             <Drawer.Screen name="IntroScreen2" component={IntroScreen2} />
