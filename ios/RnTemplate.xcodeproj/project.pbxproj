@@ -14,6 +14,11 @@
 		34D2CD7B133D175B9CE3904F /* libPods-RnTemplate.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 66B52A6BF97106602A86766F /* libPods-RnTemplate.a */; };
 		81AB9BB82411601600AC10FF /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 81AB9BB72411601600AC10FF /* LaunchScreen.storyboard */; };
 		988C5E246FEA73B0765D3134 /* libPods-RnTemplate-RnTemplateTests.a in Frameworks */ = {isa = PBXBuildFile; fileRef = FA7C975A32AC5CC8AEF0D872 /* libPods-RnTemplate-RnTemplateTests.a */; };
+		D4FAB1222B2D44BABC900803 /* Piazzolla-Bold.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 678E8E7693EF4041B580A008 /* Piazzolla-Bold.ttf */; };
+		E90B3C43C45D4DD0A5CDC3C4 /* Piazzolla-Light.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 6BB9B195333446B7AAE8813B /* Piazzolla-Light.ttf */; };
+		79D35CE84241415EB41182E4 /* Piazzolla-Medium.ttf in Resources */ = {isa = PBXBuildFile; fileRef = BB3F351B49824F8C828BD84B /* Piazzolla-Medium.ttf */; };
+		04744A91EFC74CE8A1FCDC5A /* Piazzolla-Regular.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 81460A12765A4143BC728DC1 /* Piazzolla-Regular.ttf */; };
+		1E887D75DDBC486B99CADD47 /* Piazzolla-SemiBold.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 959A19534AC744C48F022144 /* Piazzolla-SemiBold.ttf */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -61,6 +66,11 @@
 		DAA3276881BE759D7338C81B /* Pods-RnTemplate.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-RnTemplate.debug.xcconfig"; path = "Target Support Files/Pods-RnTemplate/Pods-RnTemplate.debug.xcconfig"; sourceTree = "<group>"; };
 		ED297162215061F000B7C4FE /* JavaScriptCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = JavaScriptCore.framework; path = System/Library/Frameworks/JavaScriptCore.framework; sourceTree = SDKROOT; };
 		FA7C975A32AC5CC8AEF0D872 /* libPods-RnTemplate-RnTemplateTests.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-RnTemplate-RnTemplateTests.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		678E8E7693EF4041B580A008 /* Piazzolla-Bold.ttf */ = {isa = PBXFileReference; name = "Piazzolla-Bold.ttf"; path = "../app/assets/fonts/Piazzolla-Bold.ttf"; sourceTree = "<group>"; fileEncoding = undefined; lastKnownFileType = unknown; explicitFileType = undefined; includeInIndex = 0; };
+		6BB9B195333446B7AAE8813B /* Piazzolla-Light.ttf */ = {isa = PBXFileReference; name = "Piazzolla-Light.ttf"; path = "../app/assets/fonts/Piazzolla-Light.ttf"; sourceTree = "<group>"; fileEncoding = undefined; lastKnownFileType = unknown; explicitFileType = undefined; includeInIndex = 0; };
+		BB3F351B49824F8C828BD84B /* Piazzolla-Medium.ttf */ = {isa = PBXFileReference; name = "Piazzolla-Medium.ttf"; path = "../app/assets/fonts/Piazzolla-Medium.ttf"; sourceTree = "<group>"; fileEncoding = undefined; lastKnownFileType = unknown; explicitFileType = undefined; includeInIndex = 0; };
+		81460A12765A4143BC728DC1 /* Piazzolla-Regular.ttf */ = {isa = PBXFileReference; name = "Piazzolla-Regular.ttf"; path = "../app/assets/fonts/Piazzolla-Regular.ttf"; sourceTree = "<group>"; fileEncoding = undefined; lastKnownFileType = unknown; explicitFileType = undefined; includeInIndex = 0; };
+		959A19534AC744C48F022144 /* Piazzolla-SemiBold.ttf */ = {isa = PBXFileReference; name = "Piazzolla-SemiBold.ttf"; path = "../app/assets/fonts/Piazzolla-SemiBold.ttf"; sourceTree = "<group>"; fileEncoding = undefined; lastKnownFileType = unknown; explicitFileType = undefined; includeInIndex = 0; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -151,6 +161,7 @@
 				83CBBA001A601CBA00E9B192 /* Products */,
 				2D16E6871FA4F8E400B85C8A /* Frameworks */,
 				561A48EA73978440AD9E0107 /* Pods */,
+				9E007CEE229A4ED19CE881EC /* Resources */,
 			);
 			indentWidth = 2;
 			sourceTree = "<group>";
@@ -189,6 +200,19 @@
 			);
 			name = Fonts;
 			sourceTree = "<group>";
+		};
+		9E007CEE229A4ED19CE881EC /* Resources */ = {
+			isa = "PBXGroup";
+			children = (
+				678E8E7693EF4041B580A008 /* Piazzolla-Bold.ttf */,
+				6BB9B195333446B7AAE8813B /* Piazzolla-Light.ttf */,
+				BB3F351B49824F8C828BD84B /* Piazzolla-Medium.ttf */,
+				81460A12765A4143BC728DC1 /* Piazzolla-Regular.ttf */,
+				959A19534AC744C48F022144 /* Piazzolla-SemiBold.ttf */,
+			);
+			name = Resources;
+			sourceTree = "<group>";
+			path = "";
 		};
 /* End PBXGroup section */
 
@@ -286,6 +310,11 @@
 			files = (
 				81AB9BB82411601600AC10FF /* LaunchScreen.storyboard in Resources */,
 				13B07FBF1A68108700A75B9A /* Images.xcassets in Resources */,
+				D4FAB1222B2D44BABC900803 /* Piazzolla-Bold.ttf in Resources */,
+				E90B3C43C45D4DD0A5CDC3C4 /* Piazzolla-Light.ttf in Resources */,
+				79D35CE84241415EB41182E4 /* Piazzolla-Medium.ttf in Resources */,
+				04744A91EFC74CE8A1FCDC5A /* Piazzolla-Regular.ttf in Resources */,
+				1E887D75DDBC486B99CADD47 /* Piazzolla-SemiBold.ttf in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
