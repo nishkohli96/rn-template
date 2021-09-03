@@ -11,6 +11,7 @@ import {
     ThemedText,
     ThemedContainer,
 } from '_Shared/Comps.themed';
+import CommonStyles from '_Themes/CommonStyles';
 import { useThemeStore } from '_Store/theme.store';
 
 const DrawerLayout = () => {
@@ -25,9 +26,22 @@ const DrawerLayout = () => {
                     <DrawerItem
                         icon={() => (
                             <IoniconsI
+                                name="logo-android"
+                                color={themeObj.colors.border}
+                                size={CommonStyles.icons.drawerIcon}
+                            />
+                        )}
+                        label={() => <ThemedHeading>TABS</ThemedHeading>}
+                        onPress={() => {
+                            navigation.navigate('TabsNav');
+                        }}
+                    />
+                    <DrawerItem
+                        icon={() => (
+                            <IoniconsI
                                 name="home-outline"
                                 color={themeObj.colors.border}
-                                size={themeObj.icons.drawerIcon}
+                                size={CommonStyles.icons.drawerIcon}
                             />
                         )}
                         label={() => (
@@ -42,12 +56,10 @@ const DrawerLayout = () => {
                             <IoniconsI
                                 name="musical-notes"
                                 color={themeObj.colors.border}
-                                size={themeObj.icons.drawerIcon}
+                                size={CommonStyles.icons.drawerIcon}
                             />
                         )}
-                        label={() => (
-                            <ThemedHeading>IntroScreen</ThemedHeading>
-                        )}
+                        label={() => <ThemedHeading>IntroScreen</ThemedHeading>}
                         onPress={() => {
                             navigation.navigate('IntroScreen1');
                         }}
@@ -57,12 +69,10 @@ const DrawerLayout = () => {
                             <IoniconsI
                                 name="ios-settings-outline"
                                 color={themeObj.colors.border}
-                                size={themeObj.icons.drawerIcon}
+                                size={CommonStyles.icons.drawerIcon}
                             />
                         )}
-                        label={() => (
-                            <ThemedHeading>Settings</ThemedHeading>
-                        )}
+                        label={() => <ThemedHeading>Settings</ThemedHeading>}
                         onPress={() => {
                             navigation.navigate('IntroScreen2');
                         }}

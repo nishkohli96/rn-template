@@ -2,6 +2,7 @@ import React from 'react';
 import { createDrawerNavigator } from '@react-navigation/drawer';
 
 import DrawerLayout from './DrawerLayout';
+import TabsNav from './TabsNav';
 import Home from '_Screens/home/Home';
 import IntroScreen1 from '_Screens/intro/IntroScreen1';
 import IntroScreen2 from '_Screens/intro/IntroScreen2';
@@ -15,9 +16,11 @@ const Drawer = createDrawerNavigator();
 const NavDrawer = () => {
     return (
         <Drawer.Navigator
-            initialRouteName="Home"
+            initialRouteName="TabsNav"
             overlayColor="transparent"
-            drawerContent={() => <DrawerLayout />}>
+            drawerContent={() => <DrawerLayout />}
+        >
+            <Drawer.Screen name="TabsNav" component={TabsNav} />
             <Drawer.Screen
                 name="Home"
                 component={Home}

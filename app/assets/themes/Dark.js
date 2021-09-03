@@ -1,5 +1,3 @@
-import CommonStyles from './CommonStyles';
-
 export default Dark = {
     dark: true,
     colors: {
@@ -11,5 +9,4 @@ export default Dark = {
         notification: 'rgb(255, 69, 58)',
         heading: 'yellow',
     },
-    ...CommonStyles,
 };
