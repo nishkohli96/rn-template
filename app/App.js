@@ -1,3 +1,4 @@
+import 'react-native-gesture-handler';
 import React from 'react';
 import { observer } from 'mobx-react';
 import i18next from 'i18next';

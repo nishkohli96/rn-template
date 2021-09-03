@@ -1,6 +1,6 @@
 {
     "name": "rntemplate",
-    "version": "0.0.1",
+    "version": "1.0.0",
     "private": true,
     "scripts": {
         "android": "react-native run-android",
@@ -19,7 +19,6 @@
         "@react-navigation/native": "^6.0.2",
         "@react-navigation/stack": "^6.0.7",
         "babel-plugin-module-resolver": "^4.1.0",
-        "firebase": "^9.0.1",
         "i18next": "^20.6.0",
         "mobx": "^6.3.3",
         "mobx-react": "^7.2.0",
