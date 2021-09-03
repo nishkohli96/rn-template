@@ -7,7 +7,7 @@ import { useTranslation } from 'react-i18next';
 import packageJson from '../../package.json';
 import {
     ThemedHeading,
-    ThemedText,
+    ThemedSubtitle,
     ThemedContainer,
 } from '_Shared/Comps.themed';
 import CommonStyles from '_Themes/CommonStyles';
@@ -25,7 +25,7 @@ const DrawerLayout = () => {
                     icon={() => (
                         <IoniconsI
                             name="logo-android"
-                            color={themeObj.colors.border}
+                            color={themeObj.colors.heading}
                             size={CommonStyles.icons.drawerIcon}
                         />
                     )}
@@ -38,7 +38,7 @@ const DrawerLayout = () => {
                     icon={() => (
                         <IoniconsI
                             name="home-outline"
-                            color={themeObj.colors.border}
+                            color={themeObj.colors.heading}
                             size={CommonStyles.icons.drawerIcon}
                         />
                     )}
@@ -53,7 +53,7 @@ const DrawerLayout = () => {
                     icon={() => (
                         <IoniconsI
                             name="musical-notes"
-                            color={themeObj.colors.border}
+                            color={themeObj.colors.heading}
                             size={CommonStyles.icons.drawerIcon}
                         />
                     )}
@@ -66,7 +66,7 @@ const DrawerLayout = () => {
                     icon={() => (
                         <IoniconsI
                             name="ios-settings-outline"
-                            color={themeObj.colors.border}
+                            color={themeObj.colors.heading}
                             size={CommonStyles.icons.drawerIcon}
                         />
                     )}
@@ -78,11 +78,11 @@ const DrawerLayout = () => {
             </DrawerContentScrollView>
             <DrawerItem
                 label={() => (
-                    <ThemedText>
+                    <ThemedSubtitle>
                         {t('APP.version', {
                             appVersion: packageJson.version,
                         })}
-                    </ThemedText>
+                    </ThemedSubtitle>
                 )}
             />
         </ThemedContainer>
