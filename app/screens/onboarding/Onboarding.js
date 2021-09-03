@@ -4,7 +4,7 @@ import { useNavigation } from '@react-navigation/native';
 import Onboarding from 'react-native-onboarding-swiper';
 
 import { ThemedText } from '_Shared/Comps.themed';
-import { useOnboardStore } from '_Store/onboard';
+import { useOnboardStore } from '_Store/onboard.store';
 
 const IntroScreen = () => {
     const navigation = useNavigation(); /* Navigation Hook */

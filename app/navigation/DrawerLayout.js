@@ -12,7 +12,7 @@ import {
     ThemedContainer,
 } from '_Shared/Comps.themed';
 import CommonStyles from '_Themes/CommonStyles';
-import { useThemeStore } from '_Store/theme';
+import { useThemeStore } from '_Store/theme.store';
 
 const DrawerLayout = () => {
     const { t } = useTranslation('common');

@@ -6,19 +6,24 @@ import { SafeAreaProvider } from 'react-native-safe-area-context';
 import { ThemeProvider } from 'styled-components/native';
 
 import StackNav from '_Navigation/StackNav';
-import { useThemeStore } from '_Store/theme';
-import { useLangStore } from '_Store/lang';
+import { useThemeStore } from '_Store/theme.store';
+import { useLangStore } from '_Store/lang.store';
+import { useOnboardStore } from '_Store/onboard.store';
+
 import common_en from '_I18N/en/common.json';
 import common_fr from '_I18N/fr/common.json';
 import common_hi from '_I18N/hi/common.json';
 
 const App = () => {
+    const { getOnboardAction } = useOnboardStore();
     const { themeObj, getThemeAction } = useThemeStore();
     const { langName, getLangAction } = useLangStore();
 
     React.useEffect(() => {
+        getOnboardAction();
         getThemeAction();
         getLangAction();
+
         i18next.init({
             interpolation: { escapeValue: false }, // React already does escaping
             lng: langName, // language to use

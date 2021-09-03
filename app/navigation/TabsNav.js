@@ -5,7 +5,7 @@ import { createMaterialBottomTabNavigator } from '@react-navigation/material-bot
 import IoniconsI from 'react-native-vector-icons/Ionicons';
 import { useTranslation } from 'react-i18next';
 
-import { useThemeStore } from '_Store/theme';
+import { useThemeStore } from '_Store/theme.store';
 import IntroScreen1 from '_Screens/intro/IntroScreen1';
 import IntroScreen2 from '_Screens/intro/IntroScreen2';
 import IntroScreen3 from '_Screens/intro/IntroScreen3';
