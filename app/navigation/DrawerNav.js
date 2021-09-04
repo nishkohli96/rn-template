@@ -18,14 +18,11 @@ const NavDrawer = () => {
         <Drawer.Navigator
             initialRouteName="TabsNav"
             overlayColor="transparent"
+            screenOptions={{ headerShown: false }}
             drawerContent={() => <DrawerLayout />}
         >
             <Drawer.Screen name="TabsNav" component={TabsNav} />
-            <Drawer.Screen
-                name="Home"
-                component={Home}
-                options={{ headerShown: false }}
-            />
+            <Drawer.Screen name="Home" component={Home} />
             <Drawer.Screen name="IntroScreen1" component={IntroScreen1} />
             <Drawer.Screen name="IntroScreen2" component={IntroScreen2} />
             <Drawer.Screen name="IntroScreen3" component={IntroScreen3} />

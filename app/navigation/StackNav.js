@@ -14,16 +14,16 @@ const StackNav = () => {
     return (
         <NavigationContainer>
             <Stack.Navigator
-                initialRouteName={isOnboard ? "DrawerNav" : "Onboarding"}>
+                initialRouteName={isOnboard ? "DrawerNav" : "Onboarding"}
+                screenOptions = {{ headerShown: false }}
+            >
                 <Stack.Screen
                     name="Onboarding"
                     component={Onboarding}
-                    options={{ headerShown: false }}
                 />
                 <Stack.Screen
                     name="DrawerNav"
                     component={DrawerNav}
-                    options={{ headerShown: false }}
                 />
             </Stack.Navigator>
         </NavigationContainer>

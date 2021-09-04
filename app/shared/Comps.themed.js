@@ -3,9 +3,14 @@ import styled from 'styled-components/native';
 /* Reduce Padding-Top if showing Page-header in stack navigation */
 export const ThemedContainer = styled.View`
     backgroundColor: ${props => props.theme.colors.background};
-    padding: 60px 20px 20px 20px;
+    paddingTop: 60px;
     width: 100%;
     height: 100%;
+`;
+
+export const ThemedBody = styled.View`
+    backgroundColor: ${props => props.theme.colors.background};
+    padding: 25px;
 `;
 
 export const ThemedView = styled.View`

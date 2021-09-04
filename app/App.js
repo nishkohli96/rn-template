@@ -50,7 +50,7 @@ const App = () => {
                 <ThemeProvider theme={themeObj}>
                     <StatusBar
                         animated={true}
-                        backgroundColor={themeObj.colors.background}
+                        backgroundColor={themeObj.colors.primary}
                         barStyle={
                             themeObj.dark ? 'light-content' : 'dark-content'
                         }
