@@ -1,15 +1,16 @@
 import React from 'react';
-import { StyleSheet, Text } from 'react-native';
+import { StyleSheet } from 'react-native';
 import { observer } from 'mobx-react-lite';
 import { createMaterialBottomTabNavigator } from '@react-navigation/material-bottom-tabs';
 import IoniconsI from 'react-native-vector-icons/Ionicons';
 import { useTranslation } from 'react-i18next';
 
-import { useThemeStore } from '_Store/theme.store';
+import { TabLabel } from '_Shared/Comps.themed';
 import IntroScreen1 from '_Screens/intro/IntroScreen1';
 import IntroScreen2 from '_Screens/intro/IntroScreen2';
 import IntroScreen3 from '_Screens/intro/IntroScreen3';
 import CommonStyles from '_Themes/CommonStyles';
+import { useThemeStore } from '_Store/theme.store';
 
 const Tab = createMaterialBottomTabNavigator();
 /* Refer https://reactnavigation.org/docs/material-bottom-tab-navigator  */
@@ -20,9 +21,9 @@ const TabsNav = () => {
 
     const styles = StyleSheet.create({
         barStyles: {
-            backgroundColor: themeObj.colors.header,
-            borderTopWidth: 0.3,
-            borderTopColor: 'silver',
+            backgroundColor: themeObj.colors.background,
+            borderTopColor: themeObj.colors.border,
+            borderTopWidth: 1,
         },
     });
 
@@ -37,7 +38,7 @@ const TabsNav = () => {
                 name="Feed"
                 component={IntroScreen1}
                 options={{
-                    tabBarLabel: <Text>{t('TABS.home')}</Text>,
+                    tabBarLabel: <TabLabel>{t('TABS.home')}</TabLabel>,
                     tabBarIcon: () => (
                         <IoniconsI
                             name="home"
@@ -52,7 +53,7 @@ const TabsNav = () => {
                 name="Notifications"
                 component={IntroScreen2}
                 options={{
-                    tabBarLabel: <Text>{t('TABS.updates')}</Text>,
+                    tabBarLabel: <TabLabel>{t('TABS.updates')}</TabLabel>,
                     tabBarIcon: () => (
                         <IoniconsI
                             name="code-slash-outline"
@@ -66,7 +67,7 @@ const TabsNav = () => {
                 name="Profile"
                 component={IntroScreen3}
                 options={{
-                    tabBarLabel: <Text>{t('TABS.profile')}</Text>,
+                    tabBarLabel: <TabLabel>{t('TABS.profile')}</TabLabel>,
                     tabBarIcon: () => (
                         <IoniconsI
                             name="camera-outline"

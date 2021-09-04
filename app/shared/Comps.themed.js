@@ -13,8 +13,8 @@ export const ThemedBody = styled.View`
     padding: 25px;
 `;
 
-export const ThemedView = styled.View`
-    backgroundColor: ${props => props.theme.colors.primary};
+export const ThemedCard = styled.View`
+    backgroundColor: ${props => props.theme.colors.card};
     padding: 10px;
 `;
 
@@ -32,4 +32,9 @@ export const ThemedHeading = styled.Text`
 export const ThemedSubtitle = styled.Text`
     color: ${props => props.theme.colors.heading};
     fontSize: 18px;
+`;
+
+export const TabLabel = styled.Text`
+    marginTop: 15px;
+    fontSize: 16px;
 `;

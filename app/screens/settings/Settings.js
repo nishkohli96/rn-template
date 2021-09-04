@@ -1,1 +1,1 @@
-import { ThemedView } from '_Shared/StyledComps';
+import { ThemedCard } from '_Shared/StyledComps';

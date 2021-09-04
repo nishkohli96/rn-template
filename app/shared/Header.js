@@ -1,7 +1,7 @@
 import React from 'react';
 import { View, StyleSheet } from 'react-native';
 import { useNavigation } from '@react-navigation/native';
-import IoniconsI from 'react-native-vector-icons/MaterialIcons';
+import IoniconsI from 'react-native-vector-icons/Ionicons';
 
 import { ThemedHeading } from './Comps.themed';
 import { useThemeStore } from '_Store/theme.store';
@@ -33,16 +33,16 @@ const Header = ({ title, openDrawer = false }) => {
         <View style={styles.container}>
             {openDrawer ? (
                 <IoniconsI
-                    name="menu-outline"
-                    size={25}
-                    color={themeObj.colors.border}
+                    name="md-menu-outline"
+                    size={30}
+                    color={themeObj.colors.heading}
                     onPress={() => navigation.openDrawer()}
                 />
             ) : (
                 <IoniconsI
                     name="arrow-back"
                     size={25}
-                    color={themeObj.colors.border}
+                    color={themeObj.colors.heading}
                     onPress={() => navigation.goBack()}
                 />
             )}

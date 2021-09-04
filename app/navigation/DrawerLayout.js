@@ -24,19 +24,6 @@ const DrawerLayout = () => {
                 <DrawerItem
                     icon={() => (
                         <IoniconsI
-                            name="logo-android"
-                            color={themeObj.colors.heading}
-                            size={CommonStyles.icons.drawerIcon}
-                        />
-                    )}
-                    label={() => <ThemedHeading>TABS</ThemedHeading>}
-                    onPress={() => {
-                        navigation.navigate('TabsNav');
-                    }}
-                />
-                <DrawerItem
-                    icon={() => (
-                        <IoniconsI
                             name="home-outline"
                             color={themeObj.colors.heading}
                             size={CommonStyles.icons.drawerIcon}
@@ -47,6 +34,19 @@ const DrawerLayout = () => {
                     )}
                     onPress={() => {
                         navigation.navigate('Home');
+                    }}
+                />
+                <DrawerItem
+                    icon={() => (
+                        <IoniconsI
+                            name="logo-android"
+                            color={themeObj.colors.heading}
+                            size={CommonStyles.icons.drawerIcon}
+                        />
+                    )}
+                    label={() => <ThemedHeading>TABS</ThemedHeading>}
+                    onPress={() => {
+                        navigation.navigate('TabsNav');
                     }}
                 />
                 <DrawerItem

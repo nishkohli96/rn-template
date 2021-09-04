@@ -6,7 +6,7 @@ import Header from '_Shared/Header';
 import {
     ThemedContainer,
     ThemedBody,
-    ThemedView,
+    ThemedCard,
     ThemedText,
 } from '_Shared/Comps.themed';
 import { useThemeStore } from '_Store/theme.store';
@@ -25,10 +25,9 @@ const App = () => {
         <ThemedContainer>
             <Header title="Home" openDrawer/>
             <ThemedBody>
-                <ThemedView>
-                    <Text>hi from homescreen</Text>
-                    <ThemedText>hdeiwfwe</ThemedText>
-                </ThemedView>
+                <ThemedCard>
+                    <ThemedText>Welcome to the HomeScreen !!</ThemedText>
+                </ThemedCard>
                 <Text> {t('SSO.getOTP')}</Text>
                 <ThemedText>hdeiwfwe</ThemedText>
                 <Switch
