@@ -52,27 +52,14 @@ const DrawerLayout = () => {
                 <DrawerItem
                     icon={() => (
                         <IoniconsI
-                            name="musical-notes"
-                            color={themeObj.colors.heading}
-                            size={CommonStyles.icons.drawerIcon}
-                        />
-                    )}
-                    label={() => <ThemedHeading>IntroScreen</ThemedHeading>}
-                    onPress={() => {
-                        navigation.navigate('IntroScreen1');
-                    }}
-                />
-                <DrawerItem
-                    icon={() => (
-                        <IoniconsI
                             name="ios-settings-outline"
                             color={themeObj.colors.heading}
                             size={CommonStyles.icons.drawerIcon}
                         />
                     )}
-                    label={() => <ThemedHeading>Settings</ThemedHeading>}
+                    label={() => <ThemedHeading>{t('DRAWER.settings')}</ThemedHeading>}
                     onPress={() => {
-                        navigation.navigate('IntroScreen2');
+                        navigation.navigate('Settings');
                     }}
                 />
             </DrawerContentScrollView>

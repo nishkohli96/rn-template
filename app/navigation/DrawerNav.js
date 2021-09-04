@@ -4,9 +4,7 @@ import { createDrawerNavigator } from '@react-navigation/drawer';
 import DrawerLayout from './DrawerLayout';
 import TabsNav from './TabsNav';
 import Home from '_Screens/home/Home';
-import IntroScreen1 from '_Screens/intro/IntroScreen1';
-import IntroScreen2 from '_Screens/intro/IntroScreen2';
-import IntroScreen3 from '_Screens/intro/IntroScreen3';
+import Settings from '_Screens/settings/Settings';
 
 /*
 Refer https://reactnavigation.org/docs/drawer-navigator#checking-if-the-drawer-is-open
@@ -23,9 +21,7 @@ const NavDrawer = () => {
         >
             <Drawer.Screen name="Home" component={Home} />
             <Drawer.Screen name="TabsNav" component={TabsNav} />
-            <Drawer.Screen name="IntroScreen1" component={IntroScreen1} />
-            <Drawer.Screen name="IntroScreen2" component={IntroScreen2} />
-            <Drawer.Screen name="IntroScreen3" component={IntroScreen3} />
+            <Drawer.Screen name="Settings" component={Settings} />
         </Drawer.Navigator>
     );
 };
