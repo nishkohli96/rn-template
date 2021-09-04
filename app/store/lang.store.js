@@ -3,14 +3,13 @@ import { makeAutoObservable, configure } from 'mobx';
 import AsyncStorage from '@react-native-async-storage/async-storage';
 
 export class LangStore {
-
     langName = 'hi';
 
     constructor() {
         configure({
             enforceActions: 'never' /* disable strict-mode warning */,
-        });   
-        makeAutoObservable(this, {}, { autoBind: true })
+        });
+        makeAutoObservable(this, {}, { autoBind: true });
     }
 
     async getLangAction() {
@@ -40,7 +39,7 @@ export const LangStoreContext = createContext(langStore);
 export const useLangStore = () => useContext(LangStoreContext);
 
 export const Languages = [
-    { initials: 'en', fullName: 'English' },
-    { initials: 'fr', fullName: 'Français' },
-    { initials: 'hi', fullName: 'हिंदी' },
+    { label: 'English', value: 'en', },
+    { label: 'Français', value: 'fr' },
+    { label: 'हिंदी', value: 'hi' },
 ];

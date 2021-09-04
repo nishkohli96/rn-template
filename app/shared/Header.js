@@ -1,5 +1,6 @@
 import React from 'react';
 import { View, StyleSheet } from 'react-native';
+import { observer } from 'mobx-react-lite';
 import { useNavigation } from '@react-navigation/native';
 import IoniconsI from 'react-native-vector-icons/Ionicons';
 
@@ -53,4 +54,4 @@ const Header = ({ title, openDrawer = false }) => {
     );
 };
 
-export default Header;
+export default observer(Header);
