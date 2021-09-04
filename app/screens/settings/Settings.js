@@ -1,19 +1,19 @@
 import React from 'react';
 import { observer } from 'mobx-react-lite';
-import { View, Switch, StyleSheet, ScrollView } from 'react-native';
+import { View, Text, Switch, StyleSheet, ScrollView } from 'react-native';
 import { useTranslation } from 'react-i18next';
 import RNPickerSelect from 'react-native-picker-select';
-import IoniconsI from 'react-native-vector-icons/Ionicons';
 
 import Header from '_Shared/Header';
 import { ThemedContainer, ThemedText } from '_Shared/Comps.themed';
 import { useThemeStore } from '_Store/theme.store';
 import { Languages, useLangStore } from '_Store/lang.store';
-import CommonStyles from '_Themes/CommonStyles';
 
 const Settings = () => {
-    const { themeObj, setThemeAction } = useThemeStore();
     const { t } = useTranslation('common');
+    const { setLangAction } = useLangStore();
+    const { themeObj, setThemeAction } = useThemeStore();
+
     const [isEnabled, setIsEnabled] = React.useState(themeObj.dark);
 
     const toggleSwitch = () => {
@@ -45,14 +45,14 @@ const Settings = () => {
             fontSize: 20,
             fontWeight: '500',
         },
-        settingResult: {
-            fontSize: 20,
-            color: themeObj.colors.text,
-        },
         endContent: {
             flex: 0.5,
             alignItems: 'flex-end',
         },
+        selectText: {
+            fontSize: 16,
+            color: '#007aba'
+        }
     });
 
     return (
@@ -82,17 +82,9 @@ const Settings = () => {
                         <View style={styles.endContent}>
                             <RNPickerSelect
                                 items={Languages}
-                                // placeholder={{
-                                //     // <IoniconsI
-                                //     //     name="ios-chevron-forward-sharp"
-                                //     //     color={themeObj.colors.border}
-                                //     //     size={CommonStyles.icons.drawerIcon}
-                                //     // />
-                                //     label: 'frf',
-                                //     value: null,
-                                //     color: '#007aba'
-                                // }}
-                                onValueChange={value => console.log(value)}
+                                placeholder={{}}
+                                Icon={() => <Text style={styles.selectText}>Select</Text>}
+                                onValueChange={value => setLangAction(value)}
                             />
                         </View>
                     </View>

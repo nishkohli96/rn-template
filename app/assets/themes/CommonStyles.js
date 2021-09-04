@@ -1,6 +1,6 @@
 export default CommonStyles = {
     icons: {
         drawerIcon: 20,
-        tabIcon: 30,
+        tabIcon: 25,
     },
 };

@@ -1,5 +1,5 @@
 import React from 'react';
-import { View, StyleSheet } from 'react-native';
+import { View, StyleSheet, Platform } from 'react-native';
 import { observer } from 'mobx-react-lite';
 import { useNavigation } from '@react-navigation/native';
 import IoniconsI from 'react-native-vector-icons/Ionicons';
@@ -13,7 +13,8 @@ const Header = ({ title, openDrawer = false }) => {
 
     const styles = StyleSheet.create({
         container: {
-            height: 60,
+            paddingTop: Platform.OS === 'ios' ? 60 : 0,
+            paddingBottom: 20,
             paddingLeft: 20,
             display: 'flex',
             alignItems: 'center',
