@@ -5,7 +5,7 @@
 -   To create react-native-app with custom package name, do a project-wide find and replace ```com.awesomeproject → com.mycompany.myapp``` Also in the `android` directory,
 ```src/main/java/com/awesomeproject → src/main/java/com/mycompany/myapp```
 
--   Generate your app Icon using [MakeAppIcon](https://makeappicon.com/).Read More about app icon setup on this [Link](https://aboutreact.com/react-native-change-app-icon/).iOS icons can be generated using `Icon Set Creater` app available on the App Store.
+-   Generate your app Icon using [MakeAppIcon](https://makeappicon.com/).Read More about app icon setup on this [Link](https://aboutreact.com/react-native-change-app-icon/).iOS icons can be generated using `Icon Set Creater` app available on the App Store. Make sure to also provide a round icon with the name `ic_launcher_round.png` in your android folder for various `mipmap-` directories.
 
 - Import this statement at the topmost line of your root as per `react-navigation` docs.
 ```import 'react-native-gesture-handler';```
