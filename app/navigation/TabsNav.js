@@ -46,7 +46,6 @@ const TabsNav = () => {
                             size={CommonStyles.icons.tabIcon}
                         />
                     ),
-                    // tabBarColor: 'crimson',
                 }}
             />
             <Tab.Screen

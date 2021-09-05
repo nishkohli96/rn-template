@@ -34,6 +34,5 @@ export const ThemedSubtitle = styled.Text`
 `;
 
 export const TabLabel = styled.Text`
-    marginTop: 15px;
-    fontSize: 16px;
+    fontSize: 12px;
 `;
