@@ -2,12 +2,19 @@
     "APP": {
         "version": "v : {{appVersion}}"
     },
+    "COMMON": {
+        "ok": "d'accord",
+        "cancel": "Annuler"
+    },
     "DRAWER": {
         "home": "Accueil",
         "profile": "Profil",
         "notifications": "Notifications",
         "settings": "Réglages",
         "help": "Support d'aide"
+    },
+    "HOMESCREEN": {
+        "exitMsg": "Fermer l'application ?"
     },
     "SETTINGS": {
         "darkTheme": "Thème sombre",

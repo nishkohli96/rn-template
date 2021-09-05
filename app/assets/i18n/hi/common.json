@@ -2,12 +2,19 @@
     "APP": {
         "version": "v : {{appVersion}}"
     },
+    "COMMON": {
+        "ok": "ठीक है",
+        "cancel": "रद्द करें"
+    },
     "DRAWER": {
         "home": "होम",
         "profile": "प्रोफ़ाइल",
         "notifications": "सूचनाएं",
         "settings": "सैटिंग",
         "help": "सहायता और समर्थन"
+    },
+    "HOMESCREEN": {
+        "exitMsg": "ऐप बंद करें?"
     },
     "SETTINGS": {
         "darkTheme": "डार्क थीम",
