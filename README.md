@@ -2,8 +2,8 @@
 
 ## Developer Guide
 
--   Create react-native-app with custom package name.
-```react-native init MyApp --package=com.organizationname.app```
+-   To create react-native-app with custom package name, do a project-wide find and replace ```com.awesomeproject → com.mycompany.myapp``` Also in the `android` directory,
+```src/main/java/com/awesomeproject → src/main/java/com/mycompany/myapp```
 
 -   Generate your app Icon using [MakeAppIcon](https://makeappicon.com/).Read More about app icon setup on this [Link](https://aboutreact.com/react-native-change-app-icon/).iOS icons can be generated using `Icon Set Creater` app available on the App Store.
 
