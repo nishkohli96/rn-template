@@ -8,6 +8,7 @@ import {
     TouchableOpacity,
 } from 'react-native';
 import { useTranslation } from 'react-i18next';
+import { useFocusEffect } from '@react-navigation/native';
 
 import Header from '_Shared/Header';
 import {
@@ -95,12 +96,16 @@ const App = () => {
         </Modal>
     );
 
-    React.useEffect(() => {
-        BackHandler.addEventListener('hardwareBackPress', backAction);
-
-        return () =>
-            BackHandler.removeEventListener('hardwareBackPress', backAction);
-    }, []);
+    useFocusEffect(
+        React.useCallback(() => {
+            BackHandler.addEventListener('hardwareBackPress', backAction);
+            return () =>
+                BackHandler.removeEventListener(
+                    'hardwareBackPress',
+                    backAction,
+                );
+        }, []),
+    );
 
     return (
         <ThemedContainer>
