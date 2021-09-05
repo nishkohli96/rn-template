@@ -17,7 +17,7 @@ const App = () => {
             <Header title={t('DRAWER.home')} openDrawer/>
             <ThemedBody>
                 <ThemedCard>
-                    <ThemedText>Welcome to the HomeScreen !!</ThemedText>
+                    <ThemedText>Welcome to the HomeScreen !!!</ThemedText>
                 </ThemedCard>
             </ThemedBody>
         </ThemedContainer>

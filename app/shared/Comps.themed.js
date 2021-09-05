@@ -1,4 +1,3 @@
-import { Platform } from 'react-native';
 import styled from 'styled-components/native';
 
 /* Reduce Padding-Top if showing Page-header in stack navigation */
@@ -26,7 +25,7 @@ export const ThemedText = styled.Text`
 export const ThemedHeading = styled.Text`
     color: ${props => props.theme.colors.heading};
     fontSize: 22px;
-    fontWeight: 400
+    fontFamily: Piazzolla-Bold;
 `;
 
 export const ThemedSubtitle = styled.Text`

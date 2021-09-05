@@ -43,7 +43,6 @@ const Settings = () => {
         },
         settingText: {
             fontSize: 20,
-            fontWeight: '500',
         },
         endContent: {
             flex: 0.5,
@@ -51,8 +50,8 @@ const Settings = () => {
         },
         selectText: {
             fontSize: 16,
-            color: '#007aba'
-        }
+            color: '#007aba',
+        },
     });
 
     return (
@@ -82,8 +81,16 @@ const Settings = () => {
                         <View style={styles.endContent}>
                             <RNPickerSelect
                                 items={Languages}
-                                placeholder={{}}
-                                Icon={() => <Text style={styles.selectText}>Select</Text>}
+                                placeholder={{
+                                    label: '',
+                                    value: null,
+                                    color: themeObj.colors.primary,
+                                }}
+                                Icon={() => (
+                                    <Text style={styles.selectText}>
+                                        Select
+                                    </Text>
+                                )}
                                 onValueChange={value => setLangAction(value)}
                             />
                         </View>
