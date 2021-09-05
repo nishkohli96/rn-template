@@ -34,7 +34,7 @@ export class ThemeStore {
                 ? await this.setThemeAction(themeVar)
                 : await this.setThemeAction('light');
         } catch (e) {
-            return 'error';
+            console.log(e);
         }
     }
 

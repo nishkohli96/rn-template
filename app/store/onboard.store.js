@@ -32,7 +32,7 @@ export class OnboardStore {
             await AsyncStorage.setItem('isOnboard', 'true');
             this.isOnboard = true;
         } catch (e) {
-            throw new Exception(e);
+            console.log(e);
         }
     }
 }

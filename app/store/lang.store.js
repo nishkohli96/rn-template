@@ -28,7 +28,7 @@ export class LangStore {
             await AsyncStorage.setItem('language', lang);
             this.langName = lang;
         } catch (e) {
-            throw new Exception(e);
+            console.log(e);
         }
     }
 }
