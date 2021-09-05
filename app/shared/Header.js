@@ -13,7 +13,7 @@ const Header = ({ title, openDrawer = false }) => {
 
     const styles = StyleSheet.create({
         container: {
-            paddingTop: Platform.OS === 'ios' ? 60 : 0,
+            paddingTop: Platform.OS === 'ios' ? 60 : 20,
             paddingBottom: 20,
             paddingLeft: 20,
             display: 'flex',

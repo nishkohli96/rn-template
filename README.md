@@ -19,4 +19,6 @@
 
 -   Dependencies for `@react-navigation/stack` -> `react-native-safe-area-context`, `react-native-gesture-handler`. Run `npx pod-install` after installing the dependencies.
 
+- Using `react-native-reanimated` v-1.13.3 as v2 was not working fine.
+
 - Manually link `react-native-vector-icons` in ios [link](https://medium.com/@vimniky/how-to-use-vector-icons-in-your-react-native-project-8212ac6a8f06)
