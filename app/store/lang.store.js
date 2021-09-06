@@ -19,7 +19,7 @@ export class LangStore {
                 ? await this.setLangAction(langVar)
                 : await this.setLangAction('hi');
         } catch (e) {
-            return 'error';
+            console.log(e);
         }
     }
 

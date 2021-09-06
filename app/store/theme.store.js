@@ -43,7 +43,7 @@ export class ThemeStore {
             await AsyncStorage.setItem('theme', themeName);
             this.themeObj = themeName === 'light' ? Light : Dark;
         } catch (e) {
-            throw new Exception(e);
+            console.log(e);
         }
     }
 }

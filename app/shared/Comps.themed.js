@@ -19,6 +19,7 @@ export const ThemedCard = styled.View`
 
 export const ThemedText = styled.Text`
     color: ${props => props.theme.colors.text};
+    fontFamily: Poppins-Regular;
     fontSize: 16px;
 `;
 
