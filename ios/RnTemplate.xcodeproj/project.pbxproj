@@ -59,13 +59,9 @@
 		A38543E92AF44EA6BE7AD65B /* Foundation.ttf */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = 9; includeInIndex = 0; lastKnownFileType = unknown; name = Foundation.ttf; path = "../node_modules/react-native-vector-icons/Fonts/Foundation.ttf"; sourceTree = "<group>"; };
 		AC6399693BCC47C4B019BDF8 /* Entypo.ttf */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = 9; includeInIndex = 0; lastKnownFileType = unknown; name = Entypo.ttf; path = "../node_modules/react-native-vector-icons/Fonts/Entypo.ttf"; sourceTree = "<group>"; };
 		BB3F351B49824F8C828BD84B /* Piazzolla-Medium.ttf */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = 9; includeInIndex = 0; lastKnownFileType = unknown; name = "Piazzolla-Medium.ttf"; path = "../app/assets/fonts/Piazzolla-Medium.ttf"; sourceTree = "<group>"; };
-		C733867126E68A7600DD5084 /* Piazzolla-Bold.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; name = "Piazzolla-Bold.ttf"; path = "../android/app/src/main/assets/fonts/Piazzolla-Bold.ttf"; sourceTree = "<group>"; };
-		C733867226E68A8A00DD5084 /* Piazzolla-Light.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; name = "Piazzolla-Light.ttf"; path = "../android/app/src/main/assets/fonts/Piazzolla-Light.ttf"; sourceTree = "<group>"; };
-		C733867326E68AA200DD5084 /* Piazzolla-SemiBold.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; name = "Piazzolla-SemiBold.ttf"; path = "../android/app/src/main/assets/fonts/Piazzolla-SemiBold.ttf"; sourceTree = "<group>"; };
-		C733867426E68AA200DD5084 /* Piazzolla-Medium.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; name = "Piazzolla-Medium.ttf"; path = "../android/app/src/main/assets/fonts/Piazzolla-Medium.ttf"; sourceTree = "<group>"; };
-		C733867526E68AA200DD5084 /* Piazzolla-Regular.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; name = "Piazzolla-Regular.ttf"; path = "../android/app/src/main/assets/fonts/Piazzolla-Regular.ttf"; sourceTree = "<group>"; };
-		C7DDA41326E197D8008F4E95 /* Ionicons.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; name = Ionicons.ttf; path = "../node_modules/react-native-vector-icons/Fonts/Ionicons.ttf"; sourceTree = "<group>"; };
+		C733867726E6903800DD5084 /* Ionicons.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; name = Ionicons.ttf; path = "../node_modules/react-native-vector-icons/Fonts/Ionicons.ttf"; sourceTree = "<group>"; };
 		DAA3276881BE759D7338C81B /* Pods-RnTemplate.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-RnTemplate.debug.xcconfig"; path = "Target Support Files/Pods-RnTemplate/Pods-RnTemplate.debug.xcconfig"; sourceTree = "<group>"; };
+		E6D3A300C7AA451883C4CF43 /* Ionicons.ttf */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = 9; includeInIndex = 0; lastKnownFileType = unknown; name = Ionicons.ttf; path = "../node_modules/react-native-vector-icons/Fonts/Ionicons.ttf"; sourceTree = "<group>"; };
 		ED297162215061F000B7C4FE /* JavaScriptCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = JavaScriptCore.framework; path = System/Library/Frameworks/JavaScriptCore.framework; sourceTree = SDKROOT; };
 		FA7C975A32AC5CC8AEF0D872 /* libPods-RnTemplate-RnTemplateTests.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-RnTemplate-RnTemplateTests.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
@@ -197,6 +193,7 @@
 				739143EC0DFC4EC89E2BCD9A /* Octicons.ttf */,
 				8124DE51173041C2B0904A35 /* SimpleLineIcons.ttf */,
 				4D0D045F7D18495595B1C862 /* Zocial.ttf */,
+				E6D3A300C7AA451883C4CF43 /* Ionicons.ttf */,
 			);
 			name = Resources;
 			sourceTree = "<group>";
@@ -204,12 +201,7 @@
 		C7DDA40226E19703008F4E95 /* Fonts */ = {
 			isa = PBXGroup;
 			children = (
-				C733867126E68A7600DD5084 /* Piazzolla-Bold.ttf */,
-				C733867426E68AA200DD5084 /* Piazzolla-Medium.ttf */,
-				C733867526E68AA200DD5084 /* Piazzolla-Regular.ttf */,
-				C733867326E68AA200DD5084 /* Piazzolla-SemiBold.ttf */,
-				C733867226E68A8A00DD5084 /* Piazzolla-Light.ttf */,
-				C7DDA41326E197D8008F4E95 /* Ionicons.ttf */,
+				C733867726E6903800DD5084 /* Ionicons.ttf */,
 			);
 			name = Fonts;
 			sourceTree = "<group>";
