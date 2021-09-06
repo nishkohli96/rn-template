@@ -16,16 +16,16 @@ const IntroScreen = () => {
     };
 
     const SkipBtn = () => {
-        return <ThemedText style={styles.skipBtn}>Skip</ThemedText>;
+        return <ThemedText style={styles.ctaBtn}>Skip</ThemedText>;
     };
 
     const NextBtn = () => {
-        return <ThemedText style={styles.doneBtn}>Next</ThemedText>;
+        return <ThemedText style={styles.ctaBtn}>Next</ThemedText>;
     };
 
     const DoneBtn = () => {
         return (
-            <ThemedText style={styles.doneBtn} onPress={() => gotoMainPage()}>
+            <ThemedText style={styles.ctaBtn} onPress={() => gotoMainPage()}>
                 Done
             </ThemedText>
         );
@@ -94,13 +94,8 @@ const styles = StyleSheet.create({
         // fontFamily: 'Piazzolla-Light',
         margin: 5,
     },
-    doneBtn: {
+    ctaBtn: {
         marginRight: 20,
-        fontSize: 20,
-        // fontFamily: 'Piazzolla-Bold',
-    },
-    skipBtn: {
-        marginLeft: 20,
         fontSize: 20,
         // fontFamily: 'Piazzolla-Bold',
     },
