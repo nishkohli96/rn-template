@@ -10,7 +10,7 @@ export class ThemeStore {
 
     constructor() {
         configure({
-            enforceActions: "never", /* disable strict-mode warning */
+            enforceActions: 'never' /* disable strict-mode warning */,
         });
         makeObservable(this, {
             themeObj: observable,
@@ -34,20 +34,23 @@ export class ThemeStore {
                 ? await this.setThemeAction(themeVar)
                 : await this.setThemeAction('light');
         } catch (e) {
-            return 'error';
+            console.log(e);
         }
     }
 
     async setThemeAction(themeName = 'light') {
         try {
-            await AsyncStorage.setItem('theme', themeName);
-            this.themeObj = themeName === 'light' ? Light : Dark;
+            if (themeName) {
+                await AsyncStorage.setItem('theme', themeName);
+                this.themeObj = themeName === 'light' ? Light : Dark;
+            }
         } catch (e) {
-            throw new Exception(e);
+            console.log(e);
         }
     }
 }
 
-const themeStore = new ThemeStore()
+const themeStore = new ThemeStore();
+
 export const ThemeStoreContext = createContext(themeStore);
-export const useThemeStore = () => useContext(ThemeStoreContext)
+export const useThemeStore = () => useContext(ThemeStoreContext);

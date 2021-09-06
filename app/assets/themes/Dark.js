@@ -1,11 +1,12 @@
 export default Dark = {
     dark: true,
     colors: {
-        primary: 'rgb(255, 45, 85)',
-        background: '#25293e',
-        card: 'rgb(255, 75, 255)',
-        text: '#f7f6f3',
-        border: 'rgb(199, 199, 204)',
-        notification: 'rgb(255, 69, 58)',
+        primary: '#ff5071', /* pinkish-red */
+        background: '#25293e', /* darkbluish black */
+        card: '#008c8c', /* maars-green */
+        text: '#f7f6f3', /* soft-white */
+        border: '#959fa8', /* light-gray */
+        notification: '#8a79af', /* black-currant */ 
+        heading: '#fdd261', /* mango */
     },
 };
