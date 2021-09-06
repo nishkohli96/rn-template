@@ -86,23 +86,23 @@ const styles = StyleSheet.create({
     },
     headerText: {
         fontSize: 25,
-        fontFamily: 'Piazzolla-Bold',
+        // fontFamily: 'Piazzolla-Bold',
         margin: 10,
     },
     subHeading: {
         fontSize: 15,
-        fontFamily: 'Piazzolla-Light',
+        // fontFamily: 'Piazzolla-Light',
         margin: 5,
     },
     doneBtn: {
         marginRight: 20,
         fontSize: 20,
-        fontFamily: 'Piazzolla-Bold',
+        // fontFamily: 'Piazzolla-Bold',
     },
     skipBtn: {
         marginLeft: 20,
         fontSize: 20,
-        fontFamily: 'Piazzolla-Bold',
+        // fontFamily: 'Piazzolla-Bold',
     },
     image: {
         width: 250,

@@ -25,8 +25,8 @@ export const ThemedText = styled.Text`
 export const ThemedHeading = styled.Text`
     color: ${props => props.theme.colors.heading};
     fontSize: 22px;
-    fontFamily: Piazzolla-Bold;
 `;
+//fontFamily: Piazzolla-Bold;
 
 export const ThemedSubtitle = styled.Text`
     color: ${props => props.theme.colors.heading};
