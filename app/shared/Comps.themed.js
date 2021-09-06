@@ -25,6 +25,7 @@ export const ThemedText = styled.Text`
 
 export const ThemedHeading = styled.Text`
     color: ${props => props.theme.colors.heading};
+    fontFamily: Poppins-MediumItalic;
     fontSize: 22px;
 `;
 

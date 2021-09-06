@@ -40,8 +40,10 @@ export class ThemeStore {
 
     async setThemeAction(themeName = 'light') {
         try {
-            await AsyncStorage.setItem('theme', themeName);
-            this.themeObj = themeName === 'light' ? Light : Dark;
+            if (themeName) {
+                await AsyncStorage.setItem('theme', themeName);
+                this.themeObj = themeName === 'light' ? Light : Dark;
+            }
         } catch (e) {
             console.log(e);
         }
