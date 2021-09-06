@@ -86,18 +86,18 @@ const styles = StyleSheet.create({
     },
     headerText: {
         fontSize: 25,
-        // fontFamily: 'Piazzolla-Bold',
+        fontFamily: 'Poppins-Bold',
         margin: 10,
     },
     subHeading: {
         fontSize: 15,
-        // fontFamily: 'Piazzolla-Light',
+        fontFamily: 'Poppins-Light',
         margin: 5,
     },
     ctaBtn: {
         marginRight: 20,
         fontSize: 20,
-        // fontFamily: 'Piazzolla-Bold',
+        fontFamily: 'Poppins-SemiBold',
     },
     image: {
         width: 250,

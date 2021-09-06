@@ -22,4 +22,4 @@ Go to [easyappicon.com](https://easyappicon.com/).
 
 - Using `react-native-reanimated` v-1.13.3 as v2 was not working fine.
 
-- Manually link `react-native-vector-icons` in ios [link](https://medium.com/@vimniky/how-to-use-vector-icons-in-your-react-native-project-8212ac6a8f06)
+- Manually link `react-native-vector-icons` in ios [link](https://medium.com/@vimniky/how-to-use-vector-icons-in-your-react-native-project-8212ac6a8f06). Check [this link](https://medium.com/@danielskripnik/how-to-add-and-remove-custom-fonts-in-react-native-b2830084b0e4) to add/remove fonts. 

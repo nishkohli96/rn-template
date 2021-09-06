@@ -1,6 +1,5 @@
 import React from 'react';
 import { useTranslation } from 'react-i18next';
-
 import Header from '_Shared/Header';
 import {
     ThemedContainer,
@@ -14,7 +13,7 @@ const App = () => {
 
     return (
         <ThemedContainer>
-            <Header title={t('DRAWER.home')} openDrawer/>
+            <Header title={t('DRAWER.home')} openDrawer />
             <ThemedBody>
                 <ThemedCard>
                     <ThemedText>Welcome to the HomeScreen !!!</ThemedText>
